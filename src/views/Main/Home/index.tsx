@@ -1,0 +1,12 @@
+import React from 'react';
+import { Text } from 'react-native';
+import { Page } from '@/components';
+
+export default function index() {
+  return (
+    <Page>
+      <Text>Home</Text>
+      <Text>Bottom</Text>
+    </Page>
+  );
+}
