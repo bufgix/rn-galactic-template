@@ -1,6 +1,7 @@
 import type { NavigatorScreenParams } from '@react-navigation/native';
 
 declare global {
+  // Navigaiton props
   type RootStackProps = {
     Main: NavigatorScreenParams<BottomBarProps>;
     Editor: undefined;
