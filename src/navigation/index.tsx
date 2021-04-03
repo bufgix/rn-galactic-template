@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'react-native';
 
 import { createStackNavigator } from '@react-navigation/stack';
 import {
@@ -17,10 +18,13 @@ const BottomBar = createMaterialTopTabNavigator<BottomBarProps>();
 
 export const RootStackScreen = () => {
   return (
-    <RootStack.Navigator headerMode="none">
-      <RootStack.Screen name="Main" component={BottomBarScreen} />
-      <RootStack.Screen name="Editor" component={EditorScreen} />
-    </RootStack.Navigator>
+    <>
+      <StatusBar translucent backgroundColor="transparent" />
+      <RootStack.Navigator headerMode="none">
+        <RootStack.Screen name="Main" component={BottomBarScreen} />
+        <RootStack.Screen name="Editor" component={EditorScreen} />
+      </RootStack.Navigator>
+    </>
   );
 };
 
