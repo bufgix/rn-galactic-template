@@ -9,7 +9,7 @@
     "test": "jest",
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "svgr": "svgr ./src/icons -d ./src/components/icons --native --no-dimensions --template ./icontemplate --typescript --svgo-config .svgorc.json"
+    "svgr": "svgr ./src/icons -d ./src/components/icons --native --no-dimensions --template ./icontemplate --typescript --svgo-config .svgorc.json && yarn lint:fix"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.15.1",
